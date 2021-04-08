@@ -1,8 +1,8 @@
 // C program to delete a linked list
-#include<stdio.h>
-#include<stdlib.h>
-#include<assert.h>
- 
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
 /* Link list node */
 
 struct Node
@@ -10,75 +10,66 @@ struct Node
 
     int data;
 
-    struct Node* next;
+    struct Node *next;
 };
- 
+
 /* Function to delete the entire linked list */
 
-void deleteList(struct Node** head_ref)
+void deleteList(struct Node **head_ref)
 {
 
-   /* deref head_ref to get the real head */
+    /* deref head_ref to get the real head */
 
-   struct Node* current = *head_ref;
+    struct Node *current = *head_ref;
 
-   struct Node* next;
- 
+    struct Node *next;
 
-   while (current != NULL) 
+    while (current != NULL)
 
-   {
+    {
 
-       next = current->next;
+        next = current->next;
 
-       free(current);
+        free(current);
 
-       current = next;
+        current = next;
+    }
 
-   }
-
-   
-
-   /* deref head_ref to affect the real head back
+    /* deref head_ref to affect the real head back
 
       in the caller. */
 
-   *head_ref = NULL;
+    *head_ref = NULL;
 }
- 
+
 /* Given a reference (pointer to pointer) to the head
 
   of a list and an int, push a new node on the front
 
   of the list. */
 
-void push(struct Node** head_ref, int new_data)
+void push(struct Node **head_ref, int new_data)
 {
 
     /* allocate node */
 
-    struct Node* new_node =
+    struct Node *new_node =
 
-            (struct Node*) malloc(sizeof(struct Node));
- 
+        (struct Node *)malloc(sizeof(struct Node));
 
     /* put in the data  */
 
-    new_node->data  = new_data;
-
-    
+    new_node->data = new_data;
 
     /* link the old list off the new node */
 
     new_node->next = (*head_ref);
 
-    
-
     /* move the head to point to the new node */
 
-    (*head_ref)    = new_node;
+    (*head_ref) = new_node;
 }
- 
+
 /* Driver program to test count function*/
 
 int main()
@@ -86,9 +77,7 @@ int main()
 
     /* Start with the empty list */
 
-    struct Node* head = NULL;
-
-    
+    struct Node *head = NULL;
 
     /* Use push() to construct below list
 
@@ -98,19 +87,15 @@ int main()
 
     push(&head, 4);
 
-    push(&head, 1); 
+    push(&head, 1);
 
     push(&head, 12);
 
-    push(&head, 1);   
-
-    
+    push(&head, 1);
 
     printf("\n Deleting linked list");
 
-    deleteList(&head);  
-
-    
+    deleteList(&head);
 
     printf("\n Linked list deleted");
 }
