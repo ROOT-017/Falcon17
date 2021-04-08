@@ -5,4 +5,4 @@ for i in range(1, num+1):
     age = int(input("Enter your age"))
 for b in range(1, num+1):
     print(name, sex, age)
-# end here
+# end here...
