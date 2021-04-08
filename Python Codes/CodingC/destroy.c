@@ -1,4 +1,4 @@
-// C program to delete a linked list
+// C program to delete a linked list...
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
