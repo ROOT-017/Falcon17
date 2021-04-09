@@ -2,7 +2,7 @@
 
 int main()
 {
-    char message[100], ch;
+    char message[1000], ch;
     int key, i;
 
     printf("Enter text to be encrypted: ");
@@ -16,7 +16,7 @@ int main()
         if (ch >= 'a' && ch <= 'z')
         {
             ch = ch + key;
-            if (ch >= 'z')
+            if (ch > 'z')
             {
                 ch = ch - 'z' + 'a' - 1;
             }
@@ -25,7 +25,7 @@ int main()
         else if (ch >= 'A' && ch <= 'Z')
         {
             ch = ch + key;
-            if (ch >= 'Z')
+            if (ch > 'Z')
             {
                 ch = ch - 'Z' + 'A' - 1;
             }
