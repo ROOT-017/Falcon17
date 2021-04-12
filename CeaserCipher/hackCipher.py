@@ -3,16 +3,16 @@
 # By ROOT...
 # Hacking key is 8
 message = "ZCV LCLM EM'ZM IZM JMQVO NWTTWEML"
-LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-for key in range(len(LETTERS)):
+ALPA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for key in range(len(ALPA)):
     translated = ''
     for symbol in message:
-        if symbol in LETTERS:
-            num = LETTERS.find(symbol)
+        if symbol in ALPA:
+            num = ALPA.find(symbol)
             num = num - key
             if num < 0:
-                num = num + len(LETTERS)
-            translated = translated + LETTERS[num]
+                num = num + len(ALPA)
+            translated = translated + ALPA[num]
 
             print('Hacking key #%s: %s' % (key, translated))
         else:
