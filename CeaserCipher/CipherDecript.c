@@ -1,5 +1,10 @@
 //Decryption Of Ceaser Cipher
 //run and enter cipher text or encripted text to decrypt
+/*
+Example
+ciphertext:ZCV LCLM EM'ZM IZM JMQVO NWTTWEML
+key:8
+Plaintext:RUN DUDE WE'RE ARE BEING FOLLOWED*/
 #include <stdio.h>
 
 int main()
