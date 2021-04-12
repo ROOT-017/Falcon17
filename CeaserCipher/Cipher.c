@@ -1,4 +1,5 @@
 //Implementation of Ceaser cipher
+//Run and enter the text to be encrpted and the key you like the plaintext to be encrypted preferably from 1 to 26 capitalised plaintext is better
 #include <stdio.h>
 
 int main()
