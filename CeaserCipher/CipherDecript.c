@@ -1,4 +1,5 @@
 //Decryption Of Ceaser Cipher
+//run and enter cipher text or encripted text to decrypt
 #include <stdio.h>
 
 int main()
