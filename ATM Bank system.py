@@ -1,3 +1,4 @@
+# Simple Banking System with few banking services
 print("Welcome to ROOT-TECH.inc")
 chances = 3
 balance = 10000
