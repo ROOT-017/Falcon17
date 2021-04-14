@@ -5,6 +5,7 @@ Example
 ciphertext:ZCV LCLM EM'ZM IZM JMQVO NWTTWEML
 key:8
 Plaintext:RUN DUDE WE'RE ARE BEING FOLLOWED...*/
+//CIPHER TEXT MUST BE ALL IN UPPERCASE
 #include <stdio.h>
 
 int main()
