@@ -2,7 +2,7 @@
 # Brute force attack on ciphertext showin all the possible key combination from 0 to 25 if plain text was capitalized
 # By ROOT....
 # Hacking key is 8
-message = "ZCV LCLM EM'ZM IZM JMQVO NWTTWEML"
+message = "VHFUHW"
 ALPA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 for key in range(len(ALPA)):
     translated = ''

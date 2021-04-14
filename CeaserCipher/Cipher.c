@@ -8,7 +8,7 @@ ciphertext:ZCV LCLM EM'ZM IZM JMQVO NWTTWEML*/
 
 int main()
 {
-    char message[1000], ch;
+    char message[10000], ch;
     int key, i;
 
     printf("Enter text to be encrypted: ");
