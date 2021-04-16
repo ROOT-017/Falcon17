@@ -1,4 +1,5 @@
 //Predefint factorial for Number(num) == 5
+//DECLERE VARIABLE NOT WARS!! copyright©2021
 //By ROOT😉
 public class Factorial {
     public static int num = 5, i, fact = 1;
