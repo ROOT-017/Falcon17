@@ -1,4 +1,4 @@
-//Predefint factorial for Number == 5
+//Predefint factorial for Number(num) == 5
 //By ROOT😉
 public class Factorial {
     public static int num = 5, i, fact = 1;
