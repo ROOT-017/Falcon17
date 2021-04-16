@@ -1,0 +1,14 @@
+//Predefint factorial for Number == 5
+//By ROOT😉
+public class Factorial {
+    public static int num = 5, i, fact = 1;
+
+    public static void main(String[] args) {
+        for (i = 1; i <= num; i++) {
+            fact = fact * i;
+
+        }
+        System.out.println("Fact:" + fact);
+    }
+
+}
