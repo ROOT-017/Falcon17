@@ -1,5 +1,6 @@
 // C program to delete a linked list
 //with pre difined linkedList.....
+//LinkedList      15->154->9->17->100
 //By ROOT
 #include <stdio.h>
 #include <stdlib.h>
@@ -89,9 +90,9 @@ int main()
 
     push(&head, 100);
 
-    printf("\n Deleting linked list...");
+    printf("\n Deleting linkedlist 15->154->9->17->100");
 
     deleteList(&head);
 
-    printf("\n Linked list deleted Successfully");
+    printf("\n Linked list deleted Successfully😉");
 }
