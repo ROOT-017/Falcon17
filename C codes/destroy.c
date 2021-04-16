@@ -44,12 +44,6 @@ void deleteList(struct Node **head_ref)
     *head_ref = NULL;
 }
 
-/* Given a reference (pointer to pointer) to the head
-
-  of a list and an int, push a new node on the front
-
-  of the list. */
-
 void push(struct Node **head_ref, int new_data)
 {
 
@@ -83,17 +77,17 @@ int main()
 
     /* Use push() to construct below list
 
-     1->12->1->4->1  */
+     15->154->9->17->100  */
 
-    push(&head, 1);
+    push(&head, 15);
 
-    push(&head, 4);
+    push(&head, 154);
 
-    push(&head, 1);
+    push(&head, 9);
 
-    push(&head, 12);
+    push(&head, 17);
 
-    push(&head, 1);
+    push(&head, 100);
 
     printf("\n Deleting linked list...");
 
