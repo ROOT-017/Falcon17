@@ -4,13 +4,16 @@ int main()
 {
     float Tc, Tf, Tk, n, k = 0.55555556;
 
-    printf("   **WELOME TO T-CALCULATOR**\nWhat do you want to convert? \n ");
-    printf("2=Tk-Tc\n 3=Tc-Tk\n 4=Tf-Tc\n 5=Tc-Tf\n 6=Tk-Tf\n 7=Tf-Tk\n");
+    printf("\t**WELOME TO T-CALCULATOR**\n");
+    printf("What do you want to convert?\n");
+    printf("  \t 72=Tk-Tc\n\t 3=Tc-Tk\n\t 4=Tf-Tc\n\t 5=Tc-Tf\n\t 6=Tk-Tf\n\t 7=Tf-Tk\n");
     scanf("%f", &n);
 
     //from celsuis to kelvin
     if (n == 2)
+
     {
+        system("color 0a");
         printf("Enter temperature in Celcuis\n");
         scanf("%f", &Tc);
         Tk = (Tc + 273);
