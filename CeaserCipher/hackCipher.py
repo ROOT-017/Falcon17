@@ -1,6 +1,6 @@
 # Simple code to hack ceaser cipher encrption
 # Brute force attack on ciphertext showin all the possible key combination from 0 to 25 if plain text was capitalized
-# By ROOT....
+# By ROOT😉...
 # Hacking key is 8
 message = "VHFUHW"
 ALPA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
