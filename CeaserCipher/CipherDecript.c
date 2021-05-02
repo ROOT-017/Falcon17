@@ -2,10 +2,13 @@
 //run and enter cipher text or encripted text to decrypt
 /*
 Example
-ciphertext:ZCV LCLM EM'ZM IZM JMQVO NWTTWEML
+ciphertext:ZCV BMZMVKM EM'ZM IZM JMQVO NWTTWEML
 key:8
-Plaintext:RUN DUDE WE'RE ARE BEING FOLLOWED...*/
-//CIPHER TEXT MUST BE ALL IN UPPERCASE
+Plaintext:RUN TERENCE WE'RE ARE BEING FOLLOWED...*/
+//BY NKWETACHA TERENCE NGWEN
+//FE19A089
+//copyright©2021
+//-----------------------------------------------------
 #include <stdio.h>
 
 int main()
