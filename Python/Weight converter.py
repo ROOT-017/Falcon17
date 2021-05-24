@@ -12,6 +12,8 @@ def weight_converter(weight):
         converted = weight / 0.45
         print(f"You're {converted} lbs")
         return converted
+    else :
+        print("INVALID INPUT")
 
 
 print("Convert Kg to Lbs and Vice Versa")
