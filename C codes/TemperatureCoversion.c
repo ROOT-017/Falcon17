@@ -43,6 +43,7 @@ int main()
     //from celcuis to farenheit
     else if (n == 5)
     {
+        system("color 0d");
         printf("Enter the temperature in Celsius:\n");
         scanf("%f", &Tc);
         Tf = (Tc / k) + 32;
@@ -52,6 +53,7 @@ int main()
     //from kelvin to farenheit
     else if (n == 6)
     {
+        system("color 0e");
         printf("Enter the temperature in kelvin:\n");
         scanf("%f", &Tk);
         Tf = ((Tk - 273) / k) + 32;
@@ -60,6 +62,7 @@ int main()
 
     else if (n == 7)
     {
+        system("color 0f");
         printf("Enter the temperature in Farenheit:\n");
         scanf("%f", &Tf);
         Tk = ((Tf - 32) * k) - 273;
