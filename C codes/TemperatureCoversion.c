@@ -33,6 +33,7 @@ int main()
     //from farenheit to celsius
     else if (n == 4)
     {
+        system("color 0c");
         printf("Enter the temperature in Farenheit\n");
         scanf("%f", &Tf);
         Tc = (Tf - 32) * (k);
