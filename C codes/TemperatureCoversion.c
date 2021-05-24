@@ -3,7 +3,7 @@
 int main()
 {
     float Tc, Tf, Tk, n, k = 0.55555556;
-
+main:
     printf("\t**WELOME TO T-CALCULATOR**\n");
     printf("What do you want to convert?\n");
     printf("  \t 2=Tk-Tc\n\t 3=Tc-Tk\n\t 4=Tf-Tc\n\t 5=Tc-Tf\n\t 6=Tk-Tf\n\t 7=Tf-Tk\n");
@@ -18,6 +18,9 @@ int main()
         scanf("%f", &Tc);
         Tk = (Tc + 273);
         printf("The temp in kelvin is:%fK", Tk);
+        printf("do you wanna perform more operations?(Y/N)");
+        scanf("%s", &decision);
+        if ()
     }
 
     //FROM kelvin to celsius
@@ -71,6 +74,7 @@ int main()
 
     else
     {
+        system("color 0a");
         printf("**INVALID INPUT**");
     }
 
