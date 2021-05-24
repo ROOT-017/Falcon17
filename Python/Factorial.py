@@ -7,4 +7,4 @@ if num == 0 or num == 1:
 else:
     for i in range(1, num+1):
         fact = fact*i
-print(f"factorial of {num} is: {fact}")
+print(f"Factorial of {num} is: {fact}")
