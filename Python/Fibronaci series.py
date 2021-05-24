@@ -5,4 +5,4 @@ fid = 0
 for i in range(0, num):
     fid +=i
 
-print(fid)
+print(f"Fibronaci of {num} is {fid}")
