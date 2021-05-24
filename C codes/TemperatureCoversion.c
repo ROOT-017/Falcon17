@@ -6,7 +6,7 @@ int main()
 
     printf("\t**WELOME TO T-CALCULATOR**\n");
     printf("What do you want to convert?\n");
-    printf("  \t 72=Tk-Tc\n\t 3=Tc-Tk\n\t 4=Tf-Tc\n\t 5=Tc-Tf\n\t 6=Tk-Tf\n\t 7=Tf-Tk\n");
+    printf("  \t 2=Tk-Tc\n\t 3=Tc-Tk\n\t 4=Tf-Tc\n\t 5=Tc-Tf\n\t 6=Tk-Tf\n\t 7=Tf-Tk\n");
     scanf("%f", &n);
 
     //from celsuis to kelvin
@@ -23,6 +23,7 @@ int main()
     //FROM kelvin to celsius
     else if (n == 3)
     {
+        system("color 0b");
         printf("Enter the temperatue in kelvin\n");
         scanf("%f", &Tk);
         Tc = (Tk - 273);
