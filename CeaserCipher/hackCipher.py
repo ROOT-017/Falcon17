@@ -3,7 +3,7 @@
 # By ROOT😉...
 # Hacking key is 8
 message = "VHFUHW"
-ALPA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+ALPABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 for key in range(len(ALPA)):
     translated = ''
     for symbol in message:
