@@ -8,7 +8,7 @@ for key in range(len(ALPHABET)):
     translated = ''
     for symbol in message:
         if symbol in ALPHABET:
-            num = ALPABET.find(symbol)
+            num = ALPHABET.find(symbol)
             num = num - key
             if num < 0:
                 num = num + len(ALPABET)
