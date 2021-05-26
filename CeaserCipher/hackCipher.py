@@ -4,10 +4,10 @@
 # Hacking key is 8
 message = "VHFUHW"
 ALPABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-for key in range(len(ALPABET)):
+for key in range(len(ALPhABET)):
     translated = ''
     for symbol in message:
-        if symbol in ALPABET:
+        if symbol in ALPHABET:
             num = ALPABET.find(symbol)
             num = num - key
             if num < 0:
