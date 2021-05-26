@@ -7,7 +7,7 @@ ALPABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 for key in range(len(ALPA)):
     translated = ''
     for symbol in message:
-        if symbol in ALPA:
+        if symbol in ALPABET:
             num = ALPABET.find(symbol)
             num = num - key
             if num < 0:
