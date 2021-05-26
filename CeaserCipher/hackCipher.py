@@ -12,7 +12,7 @@ for key in range(len(ALPHABET)):
             num = num - key
             if num < 0:
                 num = num + len(ALPABET)
-            translated = translated + ALPA[num]
+            translated = translated + ALPHABET[num]
 
             print('Hacking key #%s: %s' % (key, translated))
         else:
