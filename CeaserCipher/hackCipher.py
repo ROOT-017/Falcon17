@@ -8,7 +8,7 @@ for key in range(len(ALPA)):
     translated = ''
     for symbol in message:
         if symbol in ALPA:
-            num = ALPA.find(symbol)
+            num = ALPABET.find(symbol)
             num = num - key
             if num < 0:
                 num = num + len(ALPA)
