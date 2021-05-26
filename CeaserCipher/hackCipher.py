@@ -4,7 +4,7 @@
 # Hacking key is 8
 message = "VHFUHW"
 ALPABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-for key in range(len(ALPhABET)):
+for key in range(len(ALPHABET)):
     translated = ''
     for symbol in message:
         if symbol in ALPHABET:
