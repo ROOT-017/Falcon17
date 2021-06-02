@@ -10,7 +10,7 @@ for key in range(len(ALPHABET)):
         if symbol in ALPHABET:
             num = ALPHABET.find(symbol)
             num = num - key
-            if num < 0:
+            if num < 0:0
                 num = num + len(ALPHABET)
             translated = translated + ALPHABET[num]
 
