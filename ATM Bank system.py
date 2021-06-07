@@ -54,6 +54,7 @@ while chances > 0:
                         break
             elif option == 4:
                 print("Wait while can while card is ejected...")
+                
 #               print("Do you want to go perform another operation (Y/N)")
 
                 print("Have a nice day😉\n")
