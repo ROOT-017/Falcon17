@@ -14,7 +14,7 @@ while chances > 0:
     entered_pin = int(input(">"))
     if entered_pin == pin:
         while restart not in ['N', 'NO', 'no', 'No', 'nO']:
-            print("Enter 1 to check balance:\n")
+        print("Enter 1 to check balance:\n")
             print("Enter 2 to deposit funds:\n")
             print("Enter 3 to withdraw funds:\n")
             print("Enter 4 to return card:\n")
