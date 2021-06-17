@@ -5,11 +5,12 @@ chances = 3
 balance = 10000
 pin = 1234
 restart = 'Y'
+
 #Looping throught the options
 
 while chances > 0:
     print("Enter your 4 digits pin")
-    print(f"Chances letf: {chances}")
+    print(f"Chances left: {chances}")
     entered_pin = int(input(">"))
     if entered_pin == pin:
         while restart not in ['N', 'NO', 'no', 'No', 'nO']:
@@ -53,7 +54,7 @@ while chances > 0:
                         print("Have a nice day\n")
                         break
             elif option == 4:
-                print("Wait while can while card is ejected...")
+                print("Wait while card is being ejected...")
                 
 #               print("Do you want to go perform another operation (Y/N)")
 
@@ -62,7 +63,7 @@ while chances > 0:
     elif entered_pin != pin:
         print("Incorrect Pin")
         chances = chances-1
-        print(f"Chances letf: {chances}")
+        print(f"Chances left: {chances}")
         if chances == 0:
             print("Failled to enter correct pin")
             break
