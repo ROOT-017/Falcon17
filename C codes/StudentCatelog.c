@@ -51,6 +51,7 @@ struct student structStudent(void){
 	return std;
 }
 
+//Function definition of displayStudentInfos
 void displayStudentInfos(struct student std){
 		printf("{ \n");
 		printf("  Name:  %s\n",std.name);
