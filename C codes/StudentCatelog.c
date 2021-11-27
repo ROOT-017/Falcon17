@@ -35,6 +35,7 @@ for(i =0;i < number; i++){
  
 };
 
+//Function definition of structStudent
 struct student structStudent(void){
 		struct student std;
 		
