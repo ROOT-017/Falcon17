@@ -9,31 +9,6 @@ struct student
 struct student structStudent(void);
 void displayStudentInfos(struct student std);
 
-int main(void)
-{
-int number, i;
-printf("How many students do you wanna enter thier info? ");
-scanf("%d",&number);
-struct student s[number];	
-	
-	//Entring student Infos
-int j,count = 1;
-for (j = 0;j < number;j ++){
-	printf("Student %d\n",count);
-	s[j] = structStudent();
-	count ++;
-}
-//Outputing the student infos
- count =1;
- 
-for(i =0;i < number; i++){
-	printf("Student %d\n",count);
-	displayStudentInfos(s[i]);
-	count ++;
-}
- count =1;
- 
-};
 
 //Function definition of structStudent
 struct student structStudent(void){
@@ -59,3 +34,30 @@ void displayStudentInfos(struct student std){
 		printf("  Matricle: %s\n",std.mat);
 		printf("} \n\n");
 }
+
+int main(void)
+{
+    //Main program
+int number, i;
+printf("How many students do you wanna enter thier info? ");
+scanf("%d",&number);
+struct student s[number];	
+	
+	//Entring student Infos
+int j,count = 1;
+for (j = 0;j < number;j ++){
+	printf("Student %d\n",count);
+	s[j] = structStudent();
+	count ++;
+}
+//Outputing the student infos
+ count =1;
+ 
+for(i =0;i < number; i++){
+	printf("Student %d\n",count);
+	displayStudentInfos(s[i]);
+	count ++;
+}
+ count =1;
+ 
+};
