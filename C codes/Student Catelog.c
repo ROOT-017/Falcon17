@@ -1,73 +1,60 @@
 #include<stdio.h>
-int structStudent(int num){
 	//Declering student structure
-	int num, i;
-	struct std
+struct student
 	{
 	char name[50];
 	int age;
 	char mat[10];
 	};
+struct student structStudent(void);
+void displayStudentInfos(struct student std);
 
-	//Declering Variavles
-	int k = 1;
-	struct std s[num];
-
-	//Entring student Infos
-for( i=1; i <=num; i++){
-
-	printf("Enter the name of student %d: ",k);
-	scanf("%s",&s[i].name);
-	
-	printf("Enter the age of student %d: ",k);
-	scanf("%d",&s[i].age);
-	
-	printf("Enter the matricle of student %d: ",k);
-	scanf("%s",&s[i].mat);
-	k++;
-}
-}
 int main(void)
 {
-
-int number,num, j;
-
-printf("How many students do you wanna enter info? ");
+int number, i;
+printf("How many students do you wanna enter thier info? ");
 scanf("%d",&number);
-structStudent(number);
-
-int count = 1;
-
-for (j=1;j<=num;j++){
+	
+struct student s[number];	
+	
+	//Entring student Infos
+int j,count = 1;
+for (j = 0;j < number;j ++){
 	printf("Student %d\n",count);
-	printf("{ \n");
-	printf("  Name:  %s\n",s[j].name);
-	printf("  Age: %d\n",s[j].age);
-	printf("  Matricle: %s\n",s[j].mat);
-	printf("} \n\n");
+	s[j] = structStudent();
 	count ++;
 }
+//Outputing the student infos
+ count =1;
+ 
+for(i =0;i < number; i++){
+	printf("Student %d\n",count);
+	displayStudentInfos(s[i]);
+	count ++;
 }
-int addStudent(int a){
-	int numberAdded;
-	printf("How many sudent do you wanna add\n");
-	scanf("%d",&numberAdded);
+ count =1;
+ 
+};
 
-//Adding the corresponding number of students
-int k;
-for (int i = 0; i < numberAdded; i++)
-{
-	
-	printf("Enter the name of student %d: ",k);
-		scanf("%s",&s[i].name);
+struct student structStudent(void){
+		struct student std;
 		
-		printf("Enter the age of student %d: ",k);
-		scanf("%d",&s[i].age);
+		printf("Enter the name of student: ");
+		scanf("%s",&std.name);
 		
-		printf("Enter the matricle of student %d: ",k);
-		scanf("%s",&s[i].mat);
-		//k++;
+		printf("Enter the age of student: ");
+		scanf("%d",&std.age);
+		
+		printf("Enter the matricle of student: ");
+		scanf("%s",&std.mat);
+		
+	return std;
+}
 
- }
- };
-
+void displayStudentInfos(struct student std){
+		printf("{ \n");
+		printf("  Name:  %s\n",std.name);
+		printf("  Age: %d\n",std.age);
+		printf("  Matricle: %s\n",std.mat);
+		printf("} \n\n");
+}
