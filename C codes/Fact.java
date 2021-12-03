@@ -1,4 +1,3 @@
-
 public class Fact {
     int num = 5, i, fact = 1;
 
